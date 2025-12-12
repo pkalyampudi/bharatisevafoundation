@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f0f9ff" rx="12"/>
+  
+  <!-- Medical elements -->
+  <g transform="translate(100, 100)">
+    <!-- Stethoscope -->
+    <path d="M -30 -20 Q -30 10 0 20 Q 30 10 30 -20" stroke="#005a87" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Heart -->
+    <circle cx="0" cy="0" r="12" fill="#e74c3c" opacity="0.8"/>
+  </g>
+  
+  <!-- Medical cross -->
+  <rect x="75" y="30" width="8" height="50" fill="#0aa06e" rx="2"/>
+  <rect x="55" y="50" width="50" height="8" fill="#0aa06e" rx="2"/>
+</svg>

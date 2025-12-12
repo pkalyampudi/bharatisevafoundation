@@ -8,10 +8,10 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">
+    <a href="index.html" class="brand">
       <img src="assets/logo.svg" alt="Foundation Logo" class="logo" />
       <h1>Rongala Bharati Seva Foundation</h1>
-    </div>
+    </a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -27,37 +27,198 @@
     <section class="hero">
       <h2>Make a Difference Today</h2>
       <p>
-        Your generous donation helps us continue our mission of improving lives in our community. 
-        Every contribution, no matter the size, makes a meaningful impact.
+        Your generous donation helps us continue our mission of improving lives in vulnerable communities. 
+        Every contribution, no matter the size, makes a meaningful and measurable impact on real people's lives.
+      </p>
+      <p>
+        <a class="btn-primary" href="#donation-options">See Donation Options</a>
       </p>
     </section>
 
-    <section>
+    <!-- Featured Image -->
+    <div class="image-section">
+      <div class="image-container">
+        <svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="donateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#e8f8e8;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="600" height="350" fill="url(#donateGrad)"/>
+          
+          <!-- Heart with giving hands -->
+          <g transform="translate(150, 100)">
+            <!-- Left hand -->
+            <path d="M -30 30 Q -50 20 -60 0 Q -50 -10 -30 10" fill="#0aa06e"/>
+            <!-- Right hand -->
+            <path d="M 30 30 Q 50 20 60 0 Q 50 -10 30 10" fill="#005a87"/>
+            <!-- Heart -->
+            <path d="M -15 10 Q -15 -5 0 -15 Q 15 -5 15 10 Q 0 25 0 25 Q 0 25 -15 10" 
+                  fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+          </g>
+          
+          <!-- Impact indicators -->
+          <g transform="translate(380, 80)">
+            <!-- Person 1 -->
+            <circle cx="0" cy="0" r="12" fill="#0aa06e"/>
+            <path d="M 0 12 L 0 35" stroke="#0aa06e" stroke-width="5"/>
+            <line x1="-12" y1="20" x2="-30" y2="35" stroke="#0aa06e" stroke-width="4"/>
+            <line x1="12" y1="20" x2="30" y2="35" stroke="#0aa06e" stroke-width="4"/>
+            
+            <!-- Person 2 -->
+            <circle cx="50" cy="10" r="14" fill="#005a87"/>
+            <path d="M 50 24 L 50 50" stroke="#005a87" stroke-width="5"/>
+            <line x1="35" y1="35" x2="10" y2="50" stroke="#005a87" stroke-width="4"/>
+            <line x1="65" y1="35" x2="90" y2="50" stroke="#005a87" stroke-width="4"/>
+            
+            <!-- Checkmarks -->
+            <path d="M 10 60 L 15 68 L 25 55" stroke="#0aa06e" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M 60 60 L 65 68 L 75 55" stroke="#005a87" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </g>
+          
+          <text x="300" y="280" font-size="16" font-weight="bold" fill="#005a87" text-anchor="middle">
+            Every Donation Creates Lasting Impact
+          </text>
+          <text x="300" y="310" font-size="13" fill="#666" text-anchor="middle">
+            100% Not-for-Profit · Transparent Operations · Direct Impact
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- How Your Donation Helps -->
+    <section id="donation-options">
       <h3>How Your Donation Helps</h3>
       <ul class="grid-3">
-        <li><strong>₹1,000</strong> - Provides medical supplies for one family</li>
-        <li><strong>₹5,000</strong> - Supports therapy sessions for a child with disabilities</li>
-        <li><strong>₹10,000</strong> - Funds mobile healthcare for a rural community</li>
+        <li>
+          <strong style="color: #005a87; font-size: 18px;">₹1,000</strong>
+          <p style="color: #0aa06e; font-weight: 600; margin: 8px 0;">Medical Supplies</p>
+          Provides essential medical supplies and equipment for one family
+        </li>
+        <li>
+          <strong style="color: #005a87; font-size: 18px;">₹5,000</strong>
+          <p style="color: #0aa06e; font-weight: 600; margin: 8px 0;">Therapy Support</p>
+          Supports multiple therapy sessions for a child with disabilities
+        </li>
+        <li>
+          <strong style="color: #005a87; font-size: 18px;">₹10,000</strong>
+          <p style="color: #0aa06e; font-weight: 600; margin: 8px 0;">Healthcare Campaign</p>
+          Funds mobile healthcare unit visit to a rural community
+        </li>
+        <li>
+          <strong style="color: #005a87; font-size: 18px;">₹25,000</strong>
+          <p style="color: #0aa06e; font-weight: 600; margin: 8px 0;">Monthly Care</p>
+          Provides comprehensive care for an elderly beneficiary for one month
+        </li>
+        <li>
+          <strong style="color: #005a87; font-size: 18px;">₹50,000</strong>
+          <p style="color: #0aa06e; font-weight: 600; margin: 8px 0;">Program Support</p>
+          Supports one complete rehabilitation program cycle
+        </li>
+        <li>
+          <strong style="color: #005a87; font-size: 18px;">Custom Amount</strong>
+          <p style="color: #0aa06e; font-weight: 600; margin: 8px 0;">Your Choice</p>
+          Choose any amount that fits your capacity and compassion
+        </li>
       </ul>
-      
-      <div style="text-align: center; margin-top: 2rem;">
-        <p><strong>Bank Details for Donations:</strong></p>
-        <p>Account Name: Rongala Bharati Seva Foundation<br>
-        Bank: [Bank Name]<br>
-        Account Number: [Account Number]<br>
-        IFSC Code: [IFSC Code]</p>
+    </section>
+
+    <!-- Tax Benefits -->
+    <section class="card">
+      <h3 style="margin-top: 0;">✓ Tax Benefits</h3>
+      <p>
+        We are a registered public charitable trust. Your donations are eligible for tax deductions 
+        under Section 80G of the Income Tax Act. You'll receive a tax receipt with every donation.
+      </p>
+    </section>
+
+    <!-- Donation Methods -->
+    <section>
+      <h3>How to Donate</h3>
+      <ul class="grid-3">
+        <li>
+          <strong>💳 Online Donation</strong>
+          Use our secure payment gateway for instant donations via card or digital wallets
+        </li>
+        <li>
+          <strong>🏦 Bank Transfer</strong>
+          Direct transfer to our foundation account - details provided below
+        </li>
+        <li>
+          <strong>📞 Phone Donation</strong>
+          Call us to discuss custom donation plans and sponsorships
+        </li>
+      </ul>
+    </section>
+
+    <!-- Bank Details -->
+    <section class="card">
+      <h3 style="margin-top: 0;">💰 Bank Details for Donations</h3>
+      <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; border-left: 4px solid #0aa06e;">
+        <p style="margin: 8px 0;"><strong>Account Name:</strong> Rongala Bharati Seva Foundation</p>
+        <p style="margin: 8px 0;"><strong>Bank:</strong> [Bank Name - To be updated]</p>
+        <p style="margin: 8px 0;"><strong>Account Number:</strong> [Account Number - To be updated]</p>
+        <p style="margin: 8px 0;"><strong>IFSC Code:</strong> [IFSC Code - To be updated]</p>
+        <p style="margin: 8px 0;"><strong>Account Type:</strong> Savings</p>
+        <p style="margin-top: 16px; font-size: 13px; color: #666;">
+          🔒 Please ensure you provide reference details when making transfers to track your donation
+        </p>
       </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section>
+      <h3>Transparency & Trust</h3>
+      <ul class="grid-3">
+        <li>
+          <strong>✓ 100% Not-for-Profit</strong>
+          All funds directly support our mission and beneficiaries
+        </li>
+        <li>
+          <strong>✓ Full Transparency</strong>
+          Regular reports on how donations are utilized and their impact
+        </li>
+        <li>
+          <strong>✓ Registered Trust</strong>
+          Established public charitable trust with proper regulatory oversight
+        </li>
+      </ul>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="card">
+      <h3 style="margin-top: 0;">Ready to Make an Impact?</h3>
+      <p>
+        Your generosity can change lives. Whether you're making a one-time donation or considering 
+        a regular contribution, every amount matters.
+      </p>
+      <p>
+        <a class="btn-primary" href="#donation-options">Choose Your Donation Amount</a>
+        &nbsp;&nbsp;&nbsp;
+        <a class="btn-primary" href="contact.html">Ask Questions</a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>
-      © <span id="y"></span> Rongala Bharati Seva Foundation · <a href="policies/privacy.html">Privacy</a> ·
-      <a href="policies/terms.html">Terms</a> · <a href="policies/refund.html">Refunds</a>
+      © <span id="y"></span> Rongala Bharati Seva Foundation · 
+      <a href="policies/privacy.html">Privacy</a> ·
+      <a href="policies/terms.html">Terms</a> · 
+      <a href="policies/refund.html">Refunds</a>
     </p>
   </footer>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Smooth scroll for donation options
+    document.querySelector('.btn-primary').addEventListener('click', function(e) {
+      if (this.getAttribute('href') === '#donation-options') {
+        e.preventDefault();
+        document.getElementById('donation-options').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   </script>
 </body>
 </html>

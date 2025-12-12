@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#e8f4f8"/>
+  <circle cx="100" cy="80" r="40" fill="#0aa06e" opacity="0.6"/>
+  <circle cx="300" cy="100" r="50" fill="#005a87" opacity="0.5"/>
+  <rect x="80" y="150" width="240" height="100" fill="#0aa06e" opacity="0.3" rx="8"/>
+  <text x="200" y="210" font-size="20" fill="#005a87" text-anchor="middle" font-weight="bold">Healthcare & Community Support</text>
+  <text x="200" y="240" font-size="14" fill="#666" text-anchor="middle">Serving the Vulnerable Communities</text>
+</svg>

@@ -8,10 +8,10 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">
+    <a href="index.html" class="brand">
       <img src="assets/logo.svg" alt="Foundation Logo" class="logo" />
       <h1>Rongala Bharati Seva Foundation</h1>
-    </div>
+    </a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -26,37 +26,209 @@
   <main class="container">
     <section>
       <h2>Our Activities</h2>
-      
-      <h3>Medical Aid Programs</h3>
-      <ul>
-        <li>Dementia care and support services</li>
-        <li>Neurological disorder treatment and management</li>
-        <li>Mental health counseling and therapy</li>
-        <li>Elderly care and day-care services</li>
-      </ul>
+      <p>
+        We execute a diverse range of programs designed to address the healthcare and social needs of vulnerable communities. 
+        Our integrated approach ensures maximum impact and sustainable change.
+      </p>
+    </section>
 
-      <h3>Children's Rehabilitation</h3>
-      <ul>
-        <li>Cerebral palsy therapy and support</li>
-        <li>Autism spectrum disorder interventions</li>
-        <li>Learning disability support programs</li>
-        <li>Speech and occupational therapy</li>
+    <!-- Medical Aid Programs -->
+    <section>
+      <h3>🏥 Medical Aid Programs</h3>
+      <ul class="grid-3">
+        <li>
+          <strong>Dementia Care</strong>
+          Specialized support services and caregiving for elderly individuals with dementia
+        </li>
+        <li>
+          <strong>Neurological Disorders</strong>
+          Treatment, management, and rehabilitation for neurological conditions
+        </li>
+        <li>
+          <strong>Mental Health Support</strong>
+          Professional counseling, therapy, and psychological support programs
+        </li>
+        <li>
+          <strong>Elderly Care</strong>
+          Comprehensive day-care services, health monitoring, and support for senior citizens
+        </li>
+        <li>
+          <strong>Diagnostic Services</strong>
+          Free and subsidized health screening and diagnostic camps
+        </li>
+        <li>
+          <strong>Medication Support</strong>
+          Assistance with medication procurement for economically challenged patients
+        </li>
       </ul>
+    </section>
 
-      <h3>Community Health Initiatives</h3>
-      <ul>
-        <li>Mobile healthcare units for rural areas</li>
-        <li>Preventive health campaigns</li>
-        <li>Health education workshops</li>
-        <li>Vaccination drives and health screenings</li>
+    <!-- Featured Activity Image -->
+    <div class="image-section">
+      <h3 style="text-align: center; margin-top: 0;">Our Healthcare Reach</h3>
+      <div class="image-container">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="actGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#f5f3ff;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="600" height="400" fill="url(#actGrad)"/>
+          
+          <!-- Hospital building -->
+          <rect x="80" y="180" width="100" height="180" fill="#005a87" rx="4"/>
+          <rect x="85" y="195" width="20" height="30" fill="#e8f4f8"/>
+          <rect x="110" y="195" width="20" height="30" fill="#e8f4f8"/>
+          <rect x="135" y="195" width="20" height="30" fill="#e8f4f8"/>
+          <rect x="160" y="195" width="20" height="30" fill="#e8f4f8"/>
+          
+          <rect x="85" y="240" width="20" height="30" fill="#e8f4f8"/>
+          <rect x="110" y="240" width="20" height="30" fill="#e8f4f8"/>
+          <rect x="135" y="240" width="20" height="30" fill="#e8f4f8"/>
+          <rect x="160" y="240" width="20" height="30" fill="#e8f4f8"/>
+          
+          <!-- Roof -->
+          <polygon points="80,180 90,160 180,160 190,180" fill="#0aa06e" stroke="#005a87" stroke-width="2"/>
+          
+          <!-- Medical cross on roof -->
+          <line x1="130" y1="165" x2="140" y2="165" stroke="#e74c3c" stroke-width="3"/>
+          <line x1="135" y1="160" x2="135" y2="170" stroke="#e74c3c" stroke-width="3"/>
+          
+          <!-- Ambulance -->
+          <g transform="translate(320, 280)">
+            <rect x="0" y="0" width="100" height="60" fill="#e74c3c" rx="4"/>
+            <circle cx="20" cy="50" r="12" fill="#333"/>
+            <circle cx="80" cy="50" r="12" fill="#333"/>
+            <line x1="35" y1="20" x2="60" y2="20" stroke="#fff" stroke-width="2"/>
+            <line x1="35" y1="30" x2="60" y2="30" stroke="#fff" stroke-width="2"/>
+            <!-- Ambulance cross -->
+            <line x1="45" y1="5" x2="55" y2="5" stroke="#fff" stroke-width="2"/>
+            <line x1="50" y1="0" x2="50" y2="10" stroke="#fff" stroke-width="2"/>
+          </g>
+          
+          <!-- People receiving care -->
+          <circle cx="480" cy="200" r="15" fill="#0aa06e"/>
+          <path d="M 480 215 L 480 260" stroke="#0aa06e" stroke-width="6"/>
+          <line x1="465" y1="230" x2="440" y2="260" stroke="#0aa06e" stroke-width="5"/>
+          <line x1="495" y1="230" x2="520" y2="260" stroke="#0aa06e" stroke-width="5"/>
+          
+          <!-- Medicine bottles -->
+          <rect x="520" y="140" width="15" height="40" fill="#0aa06e" rx="2"/>
+          <rect x="520" y="135" width="15" height="6" fill="#005a87"/>
+          
+          <text x="300" y="350" font-size="16" font-weight="bold" fill="#005a87" text-anchor="middle">
+            Comprehensive Healthcare & Support Services
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Children's Rehabilitation -->
+    <section>
+      <h3>👧 Children's Rehabilitation Programs</h3>
+      <ul class="grid-3">
+        <li>
+          <strong>Cerebral Palsy Therapy</strong>
+          Specialized physical and occupational therapy for CP management
+        </li>
+        <li>
+          <strong>Autism Interventions</strong>
+          Evidence-based behavioral therapy and skill development programs
+        </li>
+        <li>
+          <strong>Learning Disability Support</strong>
+          Personalized educational support and learning assessments
+        </li>
+        <li>
+          <strong>Speech & Language Therapy</strong>
+          Professional speech-language pathology services
+        </li>
+        <li>
+          <strong>Developmental Assessments</strong>
+          Early identification and intervention programs
+        </li>
+        <li>
+          <strong>Adaptive Skills Training</strong>
+          Life skills and independence training programs
+        </li>
       </ul>
+    </section>
+
+    <!-- Community Health -->
+    <section>
+      <h3>🚑 Community Health Initiatives</h3>
+      <ul class="grid-3">
+        <li>
+          <strong>Mobile Healthcare Units</strong>
+          Bringing medical services to remote and underserved areas
+        </li>
+        <li>
+          <strong>Preventive Health Campaigns</strong>
+          Disease prevention and health promotion initiatives
+        </li>
+        <li>
+          <strong>Health Education Workshops</strong>
+          Community awareness on nutrition, hygiene, and wellness
+        </li>
+        <li>
+          <strong>Vaccination Drives</strong>
+          Immunization programs for vulnerable populations
+        </li>
+        <li>
+          <strong>Health Screening Camps</strong>
+          Free health check-ups and disease screening programs
+        </li>
+        <li>
+          <strong>Women & Child Health</strong>
+          Specialized healthcare for mothers and young children
+        </li>
+      </ul>
+    </section>
+
+    <!-- Research & Development -->
+    <section>
+      <h3>📊 Research & Public Health Programs</h3>
+      <p>
+        We are committed to advancing public health knowledge through research and evidence-based interventions.
+      </p>
+      <ul class="grid-3">
+        <li>
+          <strong>Health Research</strong>
+          Conducting studies to improve healthcare outcomes
+        </li>
+        <li>
+          <strong>Data & Analytics</strong>
+          Monitoring impact and improving program effectiveness
+        </li>
+        <li>
+          <strong>Best Practices</strong>
+          Sharing knowledge and promoting evidence-based approaches
+        </li>
+      </ul>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="card">
+      <h3 style="margin-top: 0;">Be Part of Our Activities</h3>
+      <p>
+        Your support directly enables us to continue and expand these life-changing programs. 
+        Whether through donations or volunteering, you can make a real difference.
+      </p>
+      <p>
+        <a class="btn-primary" href="donate.html">Donate to Our Programs</a>
+        &nbsp;&nbsp;&nbsp;
+        <a class="btn-primary" href="contact.html">Volunteer With Us</a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>
-      © <span id="y"></span> Rongala Bharati Seva Foundation · <a href="policies/privacy.html">Privacy</a> ·
-      <a href="policies/terms.html">Terms</a> · <a href="policies/refund.html">Refunds</a>
+      © <span id="y"></span> Rongala Bharati Seva Foundation · 
+      <a href="policies/privacy.html">Privacy</a> ·
+      <a href="policies/terms.html">Terms</a> · 
+      <a href="policies/refund.html">Refunds</a>
     </p>
   </footer>
   <script>

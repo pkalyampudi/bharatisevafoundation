@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rongala Bharati Seva Foundation</title>
+  <title>Bharati Seva Foundation - Transforming Lives in Rural India</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">
+    <a href="index.html" class="brand">
       <img src="assets/logo.svg" alt="Foundation Logo" class="logo" />
-      <h1>Rongala Bharati Seva Foundation</h1>
-    </div>
+      <h1>Bharati Seva Foundation</h1>
+    </a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -24,36 +24,312 @@
   </header>
 
   <main class="container">
+    <!-- Hero Section with inspiring tagline -->
     <section class="hero">
-      <h2>Together, let's improve the quality of life for the elderly, differently‑abled, and under‑served communities.</h2>
-      <p>
-        We are a public charitable trust operating strictly on a <strong>not‑for‑profit</strong> basis.
-        Your donation enables medical aid, day‑care & rehabilitation, mobile healthcare, awareness campaigns,
-        public health research, and inclusive living initiatives.
+      <h2>Transforming Lives in Rural South India</h2>
+      <p class="hero-subtitle">
+        Serving Vishakhapatnam region and surrounding communities with compassion and dignity
       </p>
       <p>
-        <a class="btn-primary" href="donate.html">Donate Now</a>
+        We are a public charitable trust operating strictly on a <strong>not-for-profit</strong> basis.
+        Your support enables medical aid, day-care & rehabilitation, mobile healthcare to remote villages, 
+        awareness campaigns, public health research, and inclusive living initiatives for the elderly, 
+        differently-abled, and under-served communities of rural South India.
       </p>
     </section>
 
-    <section>
-      <h3>Our Focus</h3>
+    <!-- Community Heroes Section -->
+    <section class="community-section">
+      <h3>Our Community Stories</h3>
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="story-image healthcare">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="healthGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#E8F4F8;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#B8E6F0;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#healthGrad)"/>
+              
+              <!-- South Indian elder - sitting -->
+              <circle cx="100" cy="50" r="18" fill="#8B6F47"/>
+              <!-- Head covering/traditional -->
+              <path d="M 75 45 Q 100 35 125 45" fill="#D4AF37" opacity="0.7"/>
+              
+              <!-- Upper body -->
+              <rect x="82" y="68" width="36" height="35" fill="#8B6F47" rx="3"/>
+              <!-- Arms -->
+              <rect x="70" y="70" width="12" height="30" fill="#8B6F47" rx="5"/>
+              <rect x="118" y="70" width="12" height="30" fill="#8B6F47" rx="5"/>
+              
+              <!-- Lower body - traditional sitting -->
+              <path d="M 82 103 L 75 145 L 82 145 L 90 103" fill="#6B4423"/>
+              <path d="M 118 103 L 125 145 L 118 145 L 110 103" fill="#6B4423"/>
+              
+              <!-- Stethoscope around -->
+              <circle cx="100" cy="90" r="22" fill="none" stroke="#E74C3C" stroke-width="2"/>
+              
+              <!-- Medical care indicator -->
+              <rect x="95" y="155" width="10" height="15" fill="#0aa06e" rx="2"/>
+              <rect x="85" y="155" width="10" height="15" fill="#0aa06e" rx="2"/>
+              <rect x="105" y="155" width="10" height="15" fill="#0aa06e" rx="2"/>
+              
+              <text x="100" y="190" font-size="14" font-weight="bold" fill="#005a87" text-anchor="middle">
+                Elder Healthcare
+              </text>
+            </svg>
+          </div>
+          <h4>Senior Healthcare & Support</h4>
+          <p>Compassionate care for elderly in rural South India with dementia, health support, and dignity.</p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-image rehab">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="rehabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#F0F8E8;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#D4F0C0;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#rehabGrad)"/>
+              
+              <!-- Child figure - more Indian features -->
+              <circle cx="100" cy="45" r="22" fill="#8B6F47"/>
+              <!-- Traditional hair/head -->
+              <path d="M 75 40 Q 100 25 125 40" fill="#3D2817" opacity="0.8"/>
+              
+              <!-- Upper body -->
+              <rect x="75" y="67" width="50" height="40" fill="#8B6F47" rx="3"/>
+              <!-- Arms extended (therapy) -->
+              <line x1="75" y1="75" x2="45" y2="65" stroke="#8B6F47" stroke-width="8" stroke-linecap="round"/>
+              <line x1="125" y1="75" x2="155" y2="65" stroke="#8B6F47" stroke-width="8" stroke-linecap="round"/>
+              
+              <!-- Lower body -->
+              <rect x="80" y="107" width="12" height="55" fill="#6B4423"/>
+              <rect x="108" y="107" width="12" height="55" fill="#6B4423"/>
+              
+              <!-- Therapy indicators (green circles) -->
+              <circle cx="50" cy="80" r="8" fill="#0aa06e" opacity="0.7"/>
+              <circle cx="150" cy="80" r="8" fill="#0aa06e" opacity="0.7"/>
+              <circle cx="100" cy="165" r="8" fill="#0aa06e" opacity="0.7"/>
+              
+              <!-- Hope symbol -->
+              <path d="M 100 25 L 105 35 L 115 35 L 107 42 L 110 52 L 100 46 L 90 52 L 93 42 L 85 35 L 95 35 Z" fill="#FFD700"/>
+              
+              <text x="100" y="190" font-size="14" font-weight="bold" fill="#0aa06e" text-anchor="middle">
+                Child Rehabilitation
+              </text>
+            </svg>
+          </div>
+          <h4>Children's Therapy Programs</h4>
+          <p>Dedicated rehabilitation for differently-abled children in rural South Indian communities with love and hope.</p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-image community">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="communityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#FFF8E8;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#FFE8B8;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#communityGrad)"/>
+              
+              <!-- Village/Rural setting -->
+              <!-- Simple house structure in background -->
+              <path d="M 30 130 L 70 100 L 110 130 Z" fill="#8B6F47" opacity="0.5"/>
+              <rect x="40" y="130" width="60" height="40" fill="#D4A574" opacity="0.6"/>
+              <rect x="55" y="140" width="12" height="15" fill="#4A3728"/>
+              
+              <!-- Women in community (representing rural South India) -->
+              <!-- Woman 1 -->
+              <circle cx="60" cy="75" r="16" fill="#8B6F47"/>
+              <path d="M 45 70 Q 60 60 75 70" fill="#D4AF37" opacity="0.6"/>
+              <rect x="50" y="91" width="20" height="30" fill="#8B6F47" rx="2"/>
+              
+              <!-- Woman 2 -->
+              <circle cx="130" cy="80" r="16" fill="#A0826D"/>
+              <path d="M 115 75 Q 130 65 145 75" fill="#CD853F" opacity="0.6"/>
+              <rect x="120" y="96" width="20" height="30" fill="#A0826D" rx="2"/>
+              
+              <!-- Hands together - community support -->
+              <line x1="70" y1="120" x2="120" y2="120" stroke="#0aa06e" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="70" cy="120" r="5" fill="#0aa06e"/>
+              <circle cx="120" cy="120" r="5" fill="#0aa06e"/>
+              
+              <!-- Rural mobile clinic indicator -->
+              <rect x="140" y="140" width="20" height="15" fill="#E74C3C" opacity="0.7"/>
+              <text x="150" y="152" font-size="10" fill="#fff" text-anchor="middle">🚑</text>
+              
+              <text x="100" y="190" font-size="14" font-weight="bold" fill="#005a87" text-anchor="middle">
+                Community Care
+              </text>
+            </svg>
+          </div>
+          <h4>Rural Village Healthcare</h4>
+          <p>Mobile healthcare bringing medical services to remote villages in Vishakhapatnam region with community support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Image Section -->
+    <div class="image-section">
+      <div class="image-container">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="max-width: 350px; height: auto;">
+          <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#f5f3ff;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="500" height="300" fill="url(#bgGrad)"/>
+          
+          <!-- Sky elements -->
+          <circle cx="450" cy="80" r="45" fill="#0aa06e" opacity="0.6"/>
+          <circle cx="120" cy="120" r="55" fill="#005a87" opacity="0.5"/>
+          
+          <!-- People figures -->
+          <g id="people">
+            <!-- Person 1 -->
+            <circle cx="150" cy="200" r="20" fill="#005a87"/>
+            <path d="M 150 220 L 150 280" stroke="#005a87" stroke-width="8" stroke-linecap="round"/>
+            <line x1="130" y1="240" x2="110" y2="280" stroke="#005a87" stroke-width="6" stroke-linecap="round"/>
+            <line x1="170" y1="240" x2="190" y2="280" stroke="#005a87" stroke-width="6" stroke-linecap="round"/>
+            
+            <!-- Person 2 -->
+            <circle cx="300" cy="210" r="22" fill="#0aa06e"/>
+            <path d="M 300 232 L 300 300" stroke="#0aa06e" stroke-width="8" stroke-linecap="round"/>
+            <line x1="278" y1="250" x2="250" y2="300" stroke="#0aa06e" stroke-width="6" stroke-linecap="round"/>
+            <line x1="322" y1="250" x2="350" y2="300" stroke="#0aa06e" stroke-width="6" stroke-linecap="round"/>
+            
+            <!-- Person 3 -->
+            <circle cx="450" cy="200" r="18" fill="#005a87"/>
+            <path d="M 450 218 L 450 270" stroke="#005a87" stroke-width="8" stroke-linecap="round"/>
+            <line x1="432" y1="235" x2="410" y2="270" stroke="#005a87" stroke-width="6" stroke-linecap="round"/>
+            <line x1="468" y1="235" x2="490" y2="270" stroke="#005a87" stroke-width="6" stroke-linecap="round"/>
+          </g>
+          
+          <!-- Heart symbol -->
+          <g transform="translate(300, 320)">
+            <path d="M -15 -8 Q -15 -15 -8 -15 Q 0 -8 0 0 Q 0 -8 8 -15 Q 15 -15 15 -8 Q 0 8 0 8 Q 0 8 -15 -8" 
+                  fill="#e74c3c" opacity="0.7"/>
+          </g>
+          
+          <!-- Medical cross -->
+          <g transform="translate(100, 300)">
+            <rect x="-8" y="-20" width="16" height="40" fill="#0aa06e" rx="2"/>
+            <rect x="-20" y="-8" width="40" height="16" fill="#0aa06e" rx="2"/>
+          </g>
+          
+          <text x="300" y="370" font-size="18" font-weight="bold" fill="#005a87" text-anchor="middle">
+            Community Care & Support
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Our Focus Section -->
+    <section class="focus-section">
+      <h3>Our Focus Areas</h3>
       <ul class="grid-3">
-        <li><strong>Medical Aid:</strong> Dementia, neurological & mental health support</li>
-        <li><strong>Children's Rehab:</strong> Cerebral palsy, autism, learning disabilities</li>
-        <li><strong>Community Health:</strong> Mobile health care & preventive campaigns</li>
+        <li class="focus-card">
+          <div class="focus-icon">🏥</div>
+          <strong>Medical Aid & Healthcare</strong>
+          <p>Dementia, neurological & mental health support for the elderly with trained professionals</p>
+        </li>
+        <li class="focus-card">
+          <div class="focus-icon">👧</div>
+          <strong>Children's Rehabilitation</strong>
+          <p>Cerebral palsy, autism, learning disabilities therapy with specialized therapists</p>
+        </li>
+        <li class="focus-card">
+          <div class="focus-icon">🚑</div>
+          <strong>Community Health Programs</strong>
+          <p>Mobile health care & preventive campaigns reaching underserved rural areas</p>
+        </li>
       </ul>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section class="impact-section">
+      <h3>Our Growing Impact</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>500+</h4>
+          <p>Elderly & Differently-Abled Persons Supported</p>
+        </div>
+        <div class="stat-card">
+          <h4>50+</h4>
+          <p>Children in Active Rehabilitation Programs</p>
+        </div>
+        <div class="stat-card">
+          <h4>30+</h4>
+          <p>Villages Reached with Mobile Healthcare</p>
+        </div>
+        <div class="stat-card">
+          <h4>100%</h4>
+          <p>Not-for-Profit, Transparent Operations</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="card cta-section">
+      <h3 style="margin-top: 0;">Join Our Mission to Transform Lives</h3>
+      <p>
+        Whether you're a donor, volunteer, or partner organization, there are many ways to be part of our journey 
+        to create a more inclusive and healthy society where everyone has access to quality healthcare and dignity.
+      </p>
+      <p>
+        <a class="btn-primary" href="about.html">Learn More About Us</a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>
-      © <span id="y"></span> Rongala Bharati Seva Foundation · <a href="policies/privacy.html">Privacy</a> ·
-      <a href="policies/terms.html">Terms</a> · <a href="policies/refund.html">Refunds</a>
+      © <span id="y"></span> Bharati Seva Foundation · 
+      <a href="policies/privacy.html">Privacy</a> ·
+      <a href="policies/terms.html">Terms</a> · 
+      <a href="policies/refund.html">Refunds</a>
     </p>
   </footer>
+
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Smooth scroll enhancement
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeIn 0.6s ease-out';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .card').forEach(element => {
+      observer.observe(element);
+    });
   </script>
 </body>
 </html>
