@@ -1,12 +1,15 @@
 
 :root {
-  --brand: #005a87;
-  --accent: #0aa06e;
-  --text: #1f2937;
+  --brand: #4a3728;
+  --accent: #8B6F47;
+  --text: #3d2817;
   --bg: #ffffff;
-  --light-bg: #f0f9ff;
-  --border: #e5e7eb;
-  --shadow: 0 4px 12px rgba(0, 90, 135, 0.1);
+  --light-bg: #f5f1ed;
+  --border: #d4c4b0;
+  --shadow: 0 4px 12px rgba(139, 111, 71, 0.15);
+  --earth-brown: #6B5344;
+  --clay-red: #A0664A;
+  --rural-green: #5c7c59;
 }
 
 * {
@@ -22,7 +25,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   color: var(--text);
-  background: linear-gradient(135deg, #f0f9ff 0%, #f5f3ff 100%);
+  background: linear-gradient(135deg, #f5f1ed 0%, #e8dfd5 100%);
   line-height: 1.6;
 }
 
@@ -32,7 +35,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  background: linear-gradient(135deg, var(--brand) 0%, #003d5c 100%);
+  background: linear-gradient(135deg, #6B5344 0%, #4a3728 100%);
   color: #fff;
   box-shadow: var(--shadow);
   position: sticky;
@@ -117,12 +120,13 @@ nav a.donate {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(10, 160, 110, 0.05) 0%, rgba(0, 90, 135, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.1) 0%, rgba(160, 102, 74, 0.08) 100%);
   padding: 48px 36px;
   border-radius: 16px;
-  border: 1px solid rgba(10, 160, 110, 0.1);
+  border: 2px solid var(--accent);
   margin-bottom: 40px;
   animation: slideIn 0.6s ease-out;
+  box-shadow: inset 0 0 20px rgba(107, 83, 68, 0.05);
 }
 
 .hero h2 {
@@ -134,14 +138,14 @@ nav a.donate {
 
 .hero p {
   font-size: 16px;
-  color: #555;
+  color: #5c4a3d;
   margin-bottom: 20px;
 }
 
 /* Buttons */
 .btn-primary, .btn {
   display: inline-block;
-  background: linear-gradient(135deg, var(--accent) 0%, #07994f 100%);
+  background: linear-gradient(135deg, #A0664A 0%, #8B5A3C 100%);
   color: #fff;
   padding: 12px 28px;
   border: none;
@@ -149,13 +153,13 @@ nav a.donate {
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(10, 160, 110, 0.3);
+  box-shadow: 0 2px 8px rgba(139, 111, 71, 0.3);
   font-size: 14px;
 }
 
 .btn-primary:hover, .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(10, 160, 110, 0.4);
+  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.4);
 }
 
 .btn-primary:active, .btn:active {
@@ -230,7 +234,7 @@ section li {
 }
 
 .image-container {
-  background: linear-gradient(135deg, rgba(0, 90, 135, 0.05) 0%, rgba(10, 160, 110, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.08) 0%, rgba(160, 102, 74, 0.08) 100%);
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -443,7 +447,7 @@ button {
 
 .story-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(10, 160, 110, 0.15);
+  box-shadow: 0 12px 25px rgba(139, 111, 71, 0.15);
 }
 
 .story-image {
@@ -462,15 +466,15 @@ button {
 }
 
 .story-image.healthcare {
-  background: linear-gradient(135deg, #E8F4F8 0%, #B8E6F0 100%);
+  background: linear-gradient(135deg, #D4C4B0 0%, #A0826D 100%);
 }
 
 .story-image.rehab {
-  background: linear-gradient(135deg, #F0F8E8 0%, #D4F0C0 100%);
+  background: linear-gradient(135deg, #C9A961 0%, #A0664A 100%);
 }
 
 .story-image.community {
-  background: linear-gradient(135deg, #FFF8E8 0%, #FFE8B8 100%);
+  background: linear-gradient(135deg, #8B6F47 0%, #6B5344 100%);
 }
 
 .story-card h4 {
@@ -528,10 +532,11 @@ button {
 
 /* Impact Section */
 .impact-section {
-  background: linear-gradient(135deg, rgba(0, 90, 135, 0.05) 0%, rgba(10, 160, 110, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(139, 111, 71, 0.08) 0%, rgba(160, 102, 74, 0.08) 100%);
   padding: 40px;
   border-radius: 12px;
   margin-bottom: 48px;
+  border: 2px solid var(--accent);
 }
 
 .impact-section h3 {
@@ -559,7 +564,7 @@ button {
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(10, 160, 110, 0.15);
+  box-shadow: 0 8px 20px rgba(139, 111, 71, 0.15);
 }
 
 .stat-card h4 {
@@ -610,10 +615,11 @@ button {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--accent) 0%, #07994f 100%);
+  background: linear-gradient(135deg, #8B6F47 0%, #6B5344 100%);
   color: #fff;
   text-align: center;
   padding: 40px 32px;
+  border-radius: 12px;
 }
 
 .cta-section h3 {
@@ -630,7 +636,7 @@ button {
 
 .cta-section .btn-primary {
   background: #fff;
-  color: var(--accent);
+  color: #8B6F47;
 }
 
 .cta-section .btn-primary:hover {
