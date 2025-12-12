@@ -690,9 +690,33 @@ button {
   z-index: 1;
 }
 
+/* Background Image Overlays for Different Pages */
+.page-background {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.page-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 95, 45, 0.55);
+  z-index: 0;
+}
+
+.page-background > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* Home/Index page - elderly care background */
 .page-elderly {
-  background-image: url('assets/images/healthcare-visit.jpg');
+  background-image: url('assets/images/elderly-care.jpeg');
 }
 
 /* About page - village fields background */
@@ -702,6 +726,26 @@ button {
 
 /* Activities/Objectives page - healthcare background */
 .page-healthcare {
+  background-image: url('assets/images/healthcare-visit.jpg');
+}
+
+/* Trustees page - elderly care background */
+.page-trustees {
+  background-image: url('assets/images/elderly-care.jpeg');
+}
+
+/* Contact page - health hospital background */
+.page-contact {
+  background-image: url('assets/images/health-hospital.jpeg');
+}
+
+/* Donate page - healthcare kids background */
+.page-donate {
+  background-image: url('assets/images/healthcare-kids.jpeg');
+}
+
+/* Objectives page - paddy fields background */
+.page-objectives {
   background-image: url('assets/images/paddy fields.jpeg');
 }
 
