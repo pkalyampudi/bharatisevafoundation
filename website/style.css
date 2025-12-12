@@ -1,15 +1,16 @@
 
 :root {
-  --brand: #4a3728;
-  --accent: #8B6F47;
-  --text: #3d2817;
+  --brand: #2c5f2d;
+  --accent: #d4993a;
+  --accent-bright: #e8b923;
+  --text: #2d3436;
   --bg: #ffffff;
-  --light-bg: #f5f1ed;
-  --border: #d4c4b0;
-  --shadow: 0 4px 12px rgba(139, 111, 71, 0.15);
-  --earth-brown: #6B5344;
-  --clay-red: #A0664A;
-  --rural-green: #5c7c59;
+  --light-bg: #fef9f3;
+  --border: #e8dcc8;
+  --shadow: 0 4px 15px rgba(44, 95, 45, 0.12);
+  --earth-brown: #8B6F47;
+  --clay-red: #C9714F;
+  --vibrant-green: #45a049;
 }
 
 * {
@@ -25,7 +26,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   color: var(--text);
-  background: linear-gradient(135deg, #f5f1ed 0%, #e8dfd5 100%);
+  background: linear-gradient(135deg, #fef9f3 0%, #f5f0e8 100%);
   line-height: 1.6;
 }
 
@@ -35,12 +36,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  background: linear-gradient(135deg, #6B5344 0%, #4a3728 100%);
+  background: linear-gradient(135deg, #2c5f2d 0%, #1f4620 100%);
   color: #fff;
-  box-shadow: var(--shadow);
+  box-shadow: 0 6px 20px rgba(44, 95, 45, 0.25);
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 4px solid var(--accent-bright);
 }
 
 .site-header .brand {
@@ -120,32 +122,38 @@ nav a.donate {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(139, 111, 71, 0.1) 0%, rgba(160, 102, 74, 0.08) 100%);
-  padding: 48px 36px;
-  border-radius: 16px;
-  border: 2px solid var(--accent);
-  margin-bottom: 40px;
+  background: linear-gradient(135deg, rgba(44, 95, 45, 0.85) 0%, rgba(212, 153, 58, 0.8) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><defs><linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%2387CEEB;stop-opacity:1" /><stop offset="100%" style="stop-color:%23E0F6FF;stop-opacity:1" /></linearGradient></defs><rect width="1000" height="600" fill="url(%23skyGrad)"/><ellipse cx="800" cy="100" rx="80" ry="60" fill="%23FFD700" opacity="0.8"/><path d="M50 450 L150 350 L250 450 Z" fill="%238B6F47" opacity="0.7"/><path d="M300 480 L350 400 L400 480 Z" fill="%236B5344" opacity="0.6"/><path d="M600 500 L700 300 L800 500 Z" fill="%23654321" opacity="0.7"/><rect x="400" y="420" width="80" height="150" fill="%238B6F47"/><path d="M400 420 L440 350 L480 420 Z" fill="%23654321"/><rect x="450" y="200" width="60" height="200" fill="%234a9d6f" opacity="0.6"/><rect x="530" y="150" width="70" height="250" fill="%234a9d6f" opacity="0.7"/><rect x="620" y="180" width="50" height="220" fill="%234a9d6f" opacity="0.6"/></svg>');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 36px;
+  border-radius: 0;
+  border: none;
+  margin: -40px -24px 40px -24px;
   animation: slideIn 0.6s ease-out;
-  box-shadow: inset 0 0 20px rgba(107, 83, 68, 0.05);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .hero h2 {
-  font-size: 32px;
-  color: var(--brand);
+  font-size: 40px;
+  color: #fff;
   margin-top: 0;
-  line-height: 1.4;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 16px;
-  color: #5c4a3d;
+  color: #fff;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.8;
 }
 
 /* Buttons */
 .btn-primary, .btn {
   display: inline-block;
-  background: linear-gradient(135deg, #A0664A 0%, #8B5A3C 100%);
+  background: linear-gradient(135deg, #45a049 0%, #2c5f2d 100%);
   color: #fff;
   padding: 12px 28px;
   border: none;
@@ -153,17 +161,19 @@ nav a.donate {
   text-decoration: none;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(139, 111, 71, 0.3);
+  box-shadow: 0 4px 12px rgba(44, 95, 45, 0.3);
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover, .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(139, 111, 71, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(44, 95, 45, 0.4);
+  background: linear-gradient(135deg, #52c964 0%, #357a3f 100%);
 }
 
 .btn-primary:active, .btn:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
 }
 
 /* Sections */
@@ -447,7 +457,7 @@ button {
 
 .story-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(139, 111, 71, 0.15);
+  box-shadow: 0 12px 30px rgba(44, 95, 45, 0.2);
 }
 
 .story-image {
@@ -466,15 +476,15 @@ button {
 }
 
 .story-image.healthcare {
-  background: linear-gradient(135deg, #D4C4B0 0%, #A0826D 100%);
+  background: linear-gradient(135deg, #90EE90 0%, #45a049 100%);
 }
 
 .story-image.rehab {
-  background: linear-gradient(135deg, #C9A961 0%, #A0664A 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #d4993a 100%);
 }
 
 .story-image.community {
-  background: linear-gradient(135deg, #8B6F47 0%, #6B5344 100%);
+  background: linear-gradient(135deg, #F4A460 0%, #CD853F 100%);
 }
 
 .story-card h4 {
@@ -532,11 +542,12 @@ button {
 
 /* Impact Section */
 .impact-section {
-  background: linear-gradient(135deg, rgba(139, 111, 71, 0.08) 0%, rgba(160, 102, 74, 0.08) 100%);
+  background: linear-gradient(135deg, rgba(45, 160, 85, 0.1) 0%, rgba(212, 153, 58, 0.08) 100%);
   padding: 40px;
   border-radius: 12px;
   margin-bottom: 48px;
-  border: 2px solid var(--accent);
+  border: 3px solid var(--accent-bright);
+  box-shadow: 0 6px 20px rgba(44, 95, 45, 0.1);
 }
 
 .impact-section h3 {
@@ -557,14 +568,15 @@ button {
   padding: 28px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(44, 95, 45, 0.1);
   transition: all 0.3s ease;
-  border-top: 4px solid var(--accent);
+  border-top: 5px solid var(--accent-bright);
 }
 
 .stat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(139, 111, 71, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(44, 95, 45, 0.15);
+  border-top-color: var(--brand);
 }
 
 .stat-card h4 {
@@ -615,31 +627,37 @@ button {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #8B6F47 0%, #6B5344 100%);
+  background: linear-gradient(135deg, #2c5f2d 0%, #45a049 50%, #d4993a 100%);
   color: #fff;
   text-align: center;
-  padding: 40px 32px;
+  padding: 50px 32px;
   border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(44, 95, 45, 0.3);
+  margin-top: 40px;
 }
 
 .cta-section h3 {
   color: #fff;
   font-size: 28px;
   margin-top: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cta-section p {
   color: rgba(255, 255, 255, 0.95);
   font-size: 16px;
   margin-bottom: 24px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .cta-section .btn-primary {
   background: #fff;
-  color: #8B6F47;
+  color: #2c5f2d;
+  font-weight: 700;
 }
 
 .cta-section .btn-primary:hover {
   background: rgba(255, 255, 255, 0.95);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  color: #1f4620;
 }
