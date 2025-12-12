@@ -661,3 +661,61 @@ button {
   transform: translateY(-3px);
   color: #1f4620;
 }
+
+/* Background Image Overlays for Different Pages */
+.page-background {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.page-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 95, 45, 0.5);
+  z-index: -1;
+}
+
+/* Home/Index page - elderly care background */
+.page-elderly {
+  background-image: url('assets/images/elderly-care.jpg');
+}
+
+/* About page - village fields background */
+.page-village {
+  background-image: url('assets/images/village-fields.jpg');
+}
+
+/* Activities/Objectives page - healthcare visit background */
+.page-healthcare {
+  background-image: url('assets/images/healthcare-visit.jpg');
+}
+
+/* Enhanced Hero with background images */
+.hero-with-bg {
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.hero-text-overlay {
+  background: rgba(44, 95, 45, 0.6);
+  padding: 40px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.hero-text-overlay h2 {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text-overlay p {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
