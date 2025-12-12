@@ -118,6 +118,8 @@ nav a.donate {
   max-width: 1024px;
   margin: 0 auto;
   padding: 40px 24px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Hero Section */
@@ -342,6 +344,8 @@ button {
   margin-top: 60px;
   color: #666;
   font-size: 14px;
+  position: relative;
+  z-index: 1;
 }
 
 .site-footer a {
@@ -677,23 +681,28 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(44, 95, 45, 0.5);
-  z-index: -1;
+  background: rgba(44, 95, 45, 0.55);
+  z-index: 0;
 }
 
-/* Home/Index page - elderly care background */
+.page-background > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Home/Index page - elderly care background - free image from Unsplash */
 .page-elderly {
-  background-image: url('assets/images/elderly-care.jpg');
+  background-image: url('https://images.unsplash.com/photo-1576091160550-112173f7f869?w=1200&h=800&fit=crop');
 }
 
-/* About page - village fields background */
+/* About page - village fields background - free image from Unsplash */
 .page-village {
-  background-image: url('assets/images/village-fields.jpg');
+  background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&h=800&fit=crop');
 }
 
-/* Activities/Objectives page - healthcare visit background */
+/* Activities/Objectives page - healthcare background - free image from Unsplash */
 .page-healthcare {
-  background-image: url('assets/images/healthcare-visit.jpg');
+  background-image: url('https://images.unsplash.com/photo-1576091160669-112de3e12980?w=1200&h=800&fit=crop');
 }
 
 /* Enhanced Hero with background images */
