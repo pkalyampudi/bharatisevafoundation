@@ -936,32 +936,39 @@ button {
   line-height: 1.8;
 }
 
-/* Horizontal Scrollable Container */
-.objectives-scroll {
-  display: flex;
-  gap: 20px;
+/* Horizontal Scrollable Container with Width Constraint */
+.objectives-scroll-wrapper {
   overflow-x: auto;
-  padding: 20px 0;
-  scroll-behavior: smooth;
+  overflow-y: hidden;
   margin: 20px 0;
+  width: 100%;
 }
 
-.objectives-scroll::-webkit-scrollbar {
+.objectives-scroll-wrapper::-webkit-scrollbar {
   height: 8px;
 }
 
-.objectives-scroll::-webkit-scrollbar-track {
+.objectives-scroll-wrapper::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 4px;
 }
 
-.objectives-scroll::-webkit-scrollbar-thumb {
+.objectives-scroll-wrapper::-webkit-scrollbar-thumb {
   background: var(--accent);
   border-radius: 4px;
 }
 
-.objectives-scroll::-webkit-scrollbar-thumb:hover {
+.objectives-scroll-wrapper::-webkit-scrollbar-thumb:hover {
   background: var(--brand);
+}
+
+.objectives-scroll {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-width: 0;
 }
 
 /* Objective Cards */
