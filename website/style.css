@@ -98,6 +98,11 @@ nav a:hover::after {
   width: 100%;
 }
 
+nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid #fff;
+}
+
 nav a.donate {
   background: #fff;
   color: var(--brand);
